@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="712.0" style="-fx-background-color: #4D585A;" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.PantallaDeCargaController">
+   <children>
+      <GridPane layoutX="266.0" layoutY="288.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox alignment="CENTER" spacing="10.0" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fx:id="logoLabel" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/LOGO%20PROKOM.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="nameLabel" styleClass="mytitle" text="Prokom" textFill="WHITE">
+                     <font>
+                        <Font name="Bauhaus 93" size="23.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="helloLabel" prefHeight="38.0" prefWidth="172.0" text="PROFESIONALES ESPECIALIZADOS" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Microsoft YaHei UI Light" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+      <GridPane layoutX="256.0" layoutY="278.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <VBox fx:id="spinnerPane" alignment="CENTER" opacity="0.0" GridPane.columnIndex="1">
+               <children>
+                  <JFXSpinner radius="30.0" />
+                  <Label prefHeight="38.0" prefWidth="114.0" text="Cargando aplicación" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+                     <font>
+                        <Font name="Microsoft JhengHei Light" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

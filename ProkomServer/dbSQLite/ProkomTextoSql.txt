@@ -1,0 +1,14 @@
+CREATE TABLE TRABAJADORES (
+    DNI varchar(255) PRIMARY KEY,
+    NOMBRE varchar(255) NOT NULL,
+    APELLIDO1 varchar(255),
+    APELLIDO2 varchar(255) NOT NULL,
+    DOMICILIO varchar(255),
+    DOMICILIOSOCIAL varchar(255),
+    NACIONALIDAD varchar(255),
+    PAIS varchar(255),
+    MUNICIPIO varchar(255),
+    CODIGOPOSTAL int,
+    NUMSEGURIDADSOCIAL int
+);
+
